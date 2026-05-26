@@ -1,0 +1,50 @@
+{
+  "body": "# Design Proposal for Mini-Website (TES-24)
+
+This document outlines the proposed layout and color palette for the new mini-website.
+
+## Color Palette
+
+The color palette is designed to be modern, clean, and trustworthy.
+
+| Color Role      | Hex Code  | Swatch                                                              |
+| --------------- | --------- | ------------------------------------------------------------------- |
+| **Primary**     | `#3B82F6` | ![#3B82F6](https://placehold.co/32x32/3B82F6/3B82F6.png) |
+| **Secondary**   | `#F97316` | ![#F97316](https://placehold.co/32x32/F97316/F97316.png) |
+| **Text**        | `#111827` | ![#111827](https://placehold.co/32x32/111827/111827.png) |
+| **Subtle Text** | `#6B7280` | ![#6B7280](https://placehold.co/32x32/6B7280/6B7280.png) |
+| **Background**  | `#FFFFFF` | ![#FFFFFF](https://placehold.co/32x32/FFFFFF/FFFFFF.png) |
+| **Section Bg**  | `#F3F4F6` | ![#F3F4F6](https://placehold.co/32x32/F3F4F6/F3F4F6.png) |
+
+## Layout
+
+A simple, single-page scrolling layout is proposed for ease of navigation. The website will be structured with the following sections:
+
+1.  **Header:**
+    *   Sticky header containing the company logo on the left.
+    *   Navigation links (e.g., "Features", "About", "Contact") on the right.
+
+2.  **Hero Section:**
+    *   A prominent headline and a short, compelling tagline.
+    *   A primary call-to-action (CTA) button using the secondary color.
+    *   A high-quality background image or illustration.
+
+3.  **Features Section:**
+    *   A grid-based layout (e.g., 3 columns) to showcase key features.
+    *   Each feature will have an icon, a short title, and a brief description.
+    *   This section will use the light gray background color (`#F3F4F6`).
+
+4.  **About Section:**
+    *   A concise section to introduce the company, product, or team.
+    *   Can include a team photo or a relevant graphic.
+
+5.  **Call to Action (CTA) Section:**
+    *   A clear and direct call to action.
+    *   A large CTA button.
+    *   This section will use the primary color as a background to make it stand out.
+
+6.  **Footer:**
+    *   A simple footer with copyright information, links to privacy policy/terms, and social media icons.
+    *   It will have a dark background using the "Text" color.
+"
+}

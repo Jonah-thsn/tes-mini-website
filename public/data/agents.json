@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Alex Apex",
+    "role": "Chief Executive Officer",
+    "slug": "ceo"
+  },
+  {
+    "name": "Brenda Binary",
+    "role": "Chief Technology Officer",
+    "slug": "cto"
+  },
+  {
+    "name": "Charlie Canvas",
+    "role": "Product Manager",
+    "slug": "pm"
+  },
+  {
+    "name": "Dana Deploy",
+    "role": "DevOps Engineer",
+    "slug": "devops"
+  },
+  {
+    "name": "Ethan Endpoint",
+    "role": "Backend Engineer",
+    "slug": "backend"
+  },
+  {
+    "name": "Fiona Frontend",
+    "role": "Frontend Engineer",
+    "slug": "frontend"
+  },
+  {
+    "name": "George Guard",
+    "role": "Security Engineer",
+    "slug": "security"
+  },
+  {
+    "name": "Hannah Hue",
+    "role": "UX/UI Designer",
+    "slug": "design"
+  },
+  {
+    "name": "Ivan Ink",
+    "role": "Technical Writer",
+    "slug": "docs"
+  },
+  {
+    "name": "Jessica Jigsaw",
+    "role": "QA Engineer",
+    "slug": "qa"
+  }
+]
