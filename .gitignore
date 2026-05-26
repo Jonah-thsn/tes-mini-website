@@ -1,0 +1,9 @@
+node_modules
+.firebase/hosting.*.cache
+update_issue.json
+comment.json
+design_proposal.md
+tech_plan.md
+interaction.json
+product_spec.md
+README.md
