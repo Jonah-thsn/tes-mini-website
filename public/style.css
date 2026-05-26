@@ -1,21 +1,32 @@
+/* Basic Reset & Variables */
 :root {
-    /* Light mode variables */
-    --background-color: #ffffff;
-    --text-color: #333333;
-    --primary-color: #007bff;
-    --secondary-color: #6c757d;
-    --card-background: #f8f9fa;
-    --header-footer-background: #e9ecef;
+    --background-light: #ffffff;
+    --text-light: #333333;
+    --primary-light: #007bff;
+    --secondary-light: #6c757d;
+    --border-light: #dee2e6;
+
+    --background-dark: #222222;
+    --text-dark: #eeeeee;
+    --primary-dark: #0056b3;
+    --secondary-dark: #adb5bd;
+    --border-dark: #454d55;
 }
 
-[data-theme="dark"] {
-    /* Dark mode variables */
-    --background-color: #343a40;
-    --text-color: #ffffff;
-    --primary-color: #0056b3;
-    --secondary-color: #adb5bd;
-    --card-background: #454d55;
-    --header-footer-background: #343a40;
+html[data-theme='light'] {
+    --background-color: var(--background-light);
+    --text-color: var(--text-light);
+    --primary-color: var(--primary-light);
+    --secondary-color: var(--secondary-light);
+    --border-color: var(--border-light);
+}
+
+html[data-theme='dark'] {
+    --background-color: var(--background-dark);
+    --text-color: var(--text-dark);
+    --primary-color: var(--primary-dark);
+    --secondary-color: var(--secondary-dark);
+    --border-color: var(--border-dark);
 }
 
 body {
@@ -25,171 +36,165 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s, color 0.3s;
 }
 
+/* Header */
 header {
-    background-color: var(--header-footer-background);
+    background-color: var(--primary-color);
+    color: white; /* Explicitly white for header text */
     padding: 1rem 0;
-    text-align: center;
-    border-bottom: 1px solid var(--secondary-color);
-    transition: background-color 0.3s ease;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    color: var(--primary-color);
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0 0 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     display: flex;
-    justify-content: center;
-    gap: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
-
-nav a {
+header h1 {
+    margin-left: 20px;
+    font-size: 2.5rem;
+}
+header nav {
+    margin-right: 20px;
+}
+header nav a {
+    color: white; /* Explicitly white for nav links */
     text-decoration: none;
-    color: var(--text-color);
+    margin: 0 15px;
     font-weight: bold;
-    transition: color 0.3s ease;
+    transition: color 0.3s;
+}
+header nav a:hover {
+    color: var(--text-color); /* This will now correctly pick up light/dark text color */
+}
+#theme-toggle {
+    background-color: var(--secondary-color);
+    color: white; /* Explicitly white for button text */
+    border: none;
+    padding: 10px 15px;
+    margin-right: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+#theme-toggle:hover {
+    background-color: var(--text-color);
 }
 
-nav a:hover {
-    color: var(--primary-color);
-}
-
+/* Main Content */
 main {
-    padding: 2rem;
+    padding: 20px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
-
 section {
-    margin-bottom: 3rem;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
 }
-
 section h2 {
-    font-size: 2rem;
     color: var(--primary-color);
-    margin-bottom: 1.5rem;
-    border-bottom: 2px solid var(--primary-color);
-    padding-bottom: 0.5rem;
+    margin-bottom: 15px;
+    font-size: 2rem;
 }
 
+/* Hero Section */
 #hero {
     text-align: center;
-    padding: 4rem 1rem;
-    background-color: var(--card-background);
-    border-radius: 8px;
-    margin-bottom: 3rem;
-    transition: background-color 0.3s ease;
-}
-
-#hero h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    color: var(--text-color);
-    border-bottom: none;
-}
-
-#hero p {
-    font-size: 1.2rem;
-    color: var(--secondary-color);
-    margin-bottom: 2rem;
-}
-
-.cta-button {
-    display: inline-block;
     background-color: var(--primary-color);
     color: white;
-    padding: 0.8rem 1.5rem;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    padding: 50px 20px;
+    border-radius: 8px; /* Match section radius */
+}
+#hero h2 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+#hero p {
+    font-size: 1.2rem;
 }
 
-.cta-button:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
-}
-
-#agent-list {
+/* Agent List */
+.agent-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
 }
-
 .agent-card {
-    background-color: var(--card-background);
-    padding: 1.5rem;
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease, background-color 0.3s ease;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.3s, background-color 0.3s, border-color 0.3s;
 }
-
 .agent-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
-
 .agent-card h3 {
     margin-top: 0;
+    margin-bottom: 5px;
     color: var(--primary-color);
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
-
 .agent-card p {
+    margin-bottom: 0;
+    font-size: 0.95rem;
     color: var(--secondary-color);
-    font-style: italic;
 }
 
+/* Footer */
 footer {
-    background-color: var(--header-footer-background);
     text-align: center;
-    padding: 2rem 0;
-    margin-top: 3rem;
-    border-top: 1px solid var(--secondary-color);
-    transition: background-color 0.3s ease;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: var(--background-color);
+    border-top: 1px solid var(--border-color);
+    color: var(--secondary-color);
+    font-size: 0.9rem;
 }
 
-footer p {
-    margin: 0.5rem 0;
-}
-
-/* Responsive adjustments */
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-    nav ul {
+    header {
         flex-direction: column;
-        gap: 0.5rem;
+        text-align: center;
     }
-    nav a {
-        font-size: 0.9rem;
+    header h1 {
+        margin-bottom: 10px;
     }
-    main {
-        padding: 1.5rem;
+    header nav {
+        margin-bottom: 10px;
     }
-    #hero h2 {
-        font-size: 2.2rem;
+    #theme-toggle {
+        margin-bottom: 10px;
     }
-    #hero p {
-        font-size: 1rem;
-    }
-    .cta-button {
-        padding: 0.6rem 1.2rem;
-    }
-    #agent-list {
+    .agent-grid {
         grid-template-columns: 1fr;
     }
+    main {
+        padding: 15px;
+    }
+    section {
+        padding: 15px;
+    }
+    section h2 {
+        font-size: 1.8rem;
+    }
+    #hero h2 {
+        font-size: 2.5rem;
+    }
 }
 
-/* Basic dark/light mode toggle placeholder - actual toggle not implemented in this task */
-/* To enable dark mode, you would typically add a class to the body or html element and switch the CSS variables */
-/* Example: html.dark-mode { ... } or body.dark-mode { ... } */
-
+/* Explicitly define dark mode styles for elements not covered by CSS variables if needed */
+html[data-theme='dark'] header nav a {
+    color: white; /* Ensure nav links stay white in dark mode */
+}
+html[data-theme='dark'] #theme-toggle {
+    color: white; /* Ensure button text stays white */
+}

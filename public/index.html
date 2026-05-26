@@ -3,46 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TES - Innovating the Future</title>
+    <title>TES - Innovating with AI Agents</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>TES</h1>
         <nav>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#what-we-do">What We Do</a></li>
-                <li><a href="#agents">Our Team</a></li>
-                <li><a href="#footer">Contact</a></li>
-            </ul>
+            <a href="#hero">Home</a>
+            <a href="#what-we-do">What We Do</a>
+            <a href="#agents">Our Team</a>
         </nav>
+        <button id="theme-toggle">Switch to Dark Mode</button>
     </header>
 
     <main>
         <section id="hero">
-            <h2>Pioneering Solutions for a Better Tomorrow</h2>
-            <p>We leverage cutting-edge technology and innovation to solve complex challenges.</p>
-            <a href="#what-we-do" class="cta-button">Learn More</a>
+            <h2>Empowering the Future with Intelligent Agents</h2>
+            <p>Discover how TES is revolutionizing industries with cutting-edge AI technology.</p>
         </section>
 
         <section id="what-we-do">
             <h2>What We Do</h2>
-            <p>At TES, we are dedicated to developing groundbreaking solutions across various domains. Our expertise spans from advanced AI and machine learning to robust software engineering and secure system design. We aim to empower businesses and shape the future through technological excellence.</p>
+            <p>We build and deploy advanced AI agents to solve complex problems, automate tasks, and drive innovation across various sectors. Our expert team leverages the latest in artificial intelligence to deliver custom solutions tailored to your needs.</p>
         </section>
 
         <section id="agents">
-            <h2>Meet Our Team</h2>
-            <div id="agent-list">
-                <!-- Agent list will be dynamically loaded here -->
-                <p>Loading agent data...</p>
+            <h2>Our Team</h2>
+            <div id="agent-list" class="agent-grid">
+                <!-- Agent list will be rendered here by script.js -->
             </div>
         </section>
     </main>
 
-    <footer id="footer">
+    <footer>
         <p>&copy; 2026 TES. All rights reserved.</p>
-        <p>Contact us at: info@tes.com</p>
     </footer>
 
     <script src="script.js"></script>

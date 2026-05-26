@@ -1,53 +1,12 @@
-
 [
-  {
-    "name": "Alex Johnson",
-    "role": "CEO",
-    "slug": "alex-johnson"
-  },
-  {
-    "name": "Jane Doe",
-    "role": "CTO",
-    "slug": "jane-doe"
-  },
-  {
-    "name": "Peter Smith",
-    "role": "Project Manager",
-    "slug": "peter-smith"
-  },
-  {
-    "name": "Maria Garcia",
-    "role": "Backend Engineer",
-    "slug": "maria-garcia"
-  },
-  {
-    "name": "David Lee",
-    "role": "DevOps Engineer",
-    "slug": "david-lee"
-  },
-  {
-    "name": "Sarah Kim",
-    "role": "Frontend Engineer",
-    "slug": "sarah-kim"
-  },
-  {
-    "name": "Michael Brown",
-    "role": "Security Engineer",
-    "slug": "michael-brown"
-  },
-  {
-    "name": "Emily White",
-    "role": "Designer",
-    "slug": "emily-white"
-  },
-  {
-    "name": "Chris Green",
-    "role": "Documentation Specialist",
-    "slug": "chris-green"
-  },
-  {
-    "name": "Olivia Black",
-    "role": "QA Engineer",
-    "slug": "olivia-black"
-  }
+  {"name": "Alice CEO", "role": "CEO", "slug": "ceo"},
+  {"name": "Bob CTO", "role": "CTO", "slug": "cto"},
+  {"name": "Charlie PM", "role": "Project Manager", "slug": "pm"},
+  {"name": "David Backend", "role": "Backend Engineer", "slug": "backend"},
+  {"name": "Eve DevOps", "role": "DevOps Engineer", "slug": "devops"},
+  {"name": "Frank Frontend", "role": "Frontend Engineer", "slug": "frontend"},
+  {"name": "Grace Security", "role": "Security Engineer", "slug": "security"},
+  {"name": "Heidi Design", "role": "UI/UX Designer", "slug": "design"},
+  {"name": "Ivan Docs", "role": "Technical Writer", "slug": "docs"},
+  {"name": "Judy QA", "role": "Quality Assurance Engineer", "slug": "qa"}
 ]
