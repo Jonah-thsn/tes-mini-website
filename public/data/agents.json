@@ -1,52 +1,53 @@
+
 [
   {
-    "name": "Alex Apex",
-    "role": "Chief Executive Officer",
-    "slug": "ceo"
+    "name": "Alex Johnson",
+    "role": "CEO",
+    "slug": "alex-johnson"
   },
   {
-    "name": "Brenda Binary",
-    "role": "Chief Technology Officer",
-    "slug": "cto"
+    "name": "Jane Doe",
+    "role": "CTO",
+    "slug": "jane-doe"
   },
   {
-    "name": "Charlie Canvas",
-    "role": "Product Manager",
-    "slug": "pm"
+    "name": "Peter Smith",
+    "role": "Project Manager",
+    "slug": "peter-smith"
   },
   {
-    "name": "Dana Deploy",
-    "role": "DevOps Engineer",
-    "slug": "devops"
-  },
-  {
-    "name": "Ethan Endpoint",
+    "name": "Maria Garcia",
     "role": "Backend Engineer",
-    "slug": "backend"
+    "slug": "maria-garcia"
   },
   {
-    "name": "Fiona Frontend",
+    "name": "David Lee",
+    "role": "DevOps Engineer",
+    "slug": "david-lee"
+  },
+  {
+    "name": "Sarah Kim",
     "role": "Frontend Engineer",
-    "slug": "frontend"
+    "slug": "sarah-kim"
   },
   {
-    "name": "George Guard",
+    "name": "Michael Brown",
     "role": "Security Engineer",
-    "slug": "security"
+    "slug": "michael-brown"
   },
   {
-    "name": "Hannah Hue",
-    "role": "UX/UI Designer",
-    "slug": "design"
+    "name": "Emily White",
+    "role": "Designer",
+    "slug": "emily-white"
   },
   {
-    "name": "Ivan Ink",
-    "role": "Technical Writer",
-    "slug": "docs"
+    "name": "Chris Green",
+    "role": "Documentation Specialist",
+    "slug": "chris-green"
   },
   {
-    "name": "Jessica Jigsaw",
+    "name": "Olivia Black",
     "role": "QA Engineer",
-    "slug": "qa"
+    "slug": "olivia-black"
   }
 ]
